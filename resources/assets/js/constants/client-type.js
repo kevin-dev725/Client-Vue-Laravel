@@ -1,0 +1,1 @@
+export const CLIENT_TYPE_INDIVIDUAL = 'individual', CLIENT_TYPE_ORGANIZATION = 'organization';

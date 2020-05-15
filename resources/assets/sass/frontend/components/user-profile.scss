@@ -1,0 +1,32 @@
+.user-profile {
+  ul.links {
+    color: $primary;
+  }
+  .avatar-container {
+    position: relative;
+    img {
+      max-width: 200px;
+      &.can-edit {
+        cursor: pointer;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+    &.hover {
+      &:before {
+        opacity: 1;
+      }
+    }
+    &:before {
+      content: '\f093';
+      font-family: FontAwesome;
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 50%;
+      font-size: 30px;
+      opacity: 0;
+    }
+  }
+}

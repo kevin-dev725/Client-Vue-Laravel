@@ -1,0 +1,21 @@
+.page-register {
+  .agree-terms {
+    text-align: center;
+    .custom-control-label::before {
+      position: relative;
+      top: 1.25rem;
+      left: -20px;
+    }
+    .custom-control-label::after {
+      position: relative;
+      top: -1.25rem;
+      left: -20px;
+    }
+    .custom-control-input {
+      position: relative;
+    }
+  }
+  .section-title {
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,1 @@
+export const ACCOUNT_TYPE_INDIVIDUAL = 'individual', ACCOUNT_TYPE_COMPANY = 'company';

@@ -1,0 +1,1 @@
+export const RATING_NO_OPINION = 'No opinion', RATING_THUMBS_UP = 'Thumbs up', RATING_THUMBS_DOWN = 'Thumbs down';

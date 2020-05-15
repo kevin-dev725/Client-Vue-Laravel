@@ -1,0 +1,25 @@
+version: '2'
+services:
+    clientDomain-test:
+        container_name: sourcetoad_clientDomain_test
+        build: .
+        environment:
+          PHP_IDE_CONFIG: "serverName=docker"
+          HTTP_PORT: 8080
+          PHANTOM_PORT: 4444
+        volumes:
+            - ../:/code:delegated
+        networks:
+            - clientDomain-internal
+            - st-redis-32
+            - st-mariadb-102
+        env_file:
+            - ../.env
+networks:
+    clientDomain-internal:
+    st-redis-32:
+        external:
+            name: st-redis-32
+    st-mariadb-102:
+        external:
+            name: st-mariadb-102

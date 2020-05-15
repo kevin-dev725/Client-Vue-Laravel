@@ -1,0 +1,1 @@
+export const SEARCH_BY_PHONE = 'phone number', SEARCH_BY_EMAIL = 'email', SEARCH_BY_NAME = 'name and address';

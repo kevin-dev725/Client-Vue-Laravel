@@ -1,0 +1,9 @@
+@import 'bootstrap-variables';
+
+@import "~bootstrap/scss/bootstrap";
+
+@import "bootstrap-overrides";
+
+@import 'vendors';
+
+@import "./components/bootstrap";

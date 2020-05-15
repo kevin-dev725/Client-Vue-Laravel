@@ -1,0 +1,25 @@
+# clientDomain CodeDeploy
+# DO NOT DELETE
+#
+# @author Justin <admin@sourcetoad.com>
+# @copyright Sourcetoad, LLC
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /usr/share/nginx/html/
+hooks:
+  BeforeInstall:
+    - location: scripts/cdscripts/clean_directory.sh
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: scripts/cdscripts/setup_php.sh
+    - location: scripts/cdscripts/change_permissions.sh
+    - location: scripts/cdscripts/start_server.sh
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: scripts/cdscripts/stop_server.sh
+      timeout: 300
+      runas: root

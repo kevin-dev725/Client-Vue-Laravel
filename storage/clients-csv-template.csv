@@ -1,0 +1,4 @@
+Client type,Organization name,First name,Middle name,Last name,Phone number,Phone number extension,Alternate phone number,Alternate phone number extension,Country iso alpha-2 code,Street address,Street address 2,City,State,Postal code,Email address,Billing first name,Billing middle name,Billing last name,Billing phone number,Billing phone number extension,Billing street address,Billing street address 2,Billing city,Billing state,Billing postal code,Billing email address,Initial star rating
+Individual,,John,Joe,Doe,(650) 555-8984,5555,(650) 555-9848,4444,US,123 Generic St.,,Generic City,GS,64510,johnjoedoe@email.com,,,,,,,,,,,,5
+Individual,,Jane,,Doe,(650) 555-8985,5555,(650) 555-9849,4444,US,123 Generic St.,,Generic City,GS,64510,janedoe@email.com,,,,,,,,,,,,
+Organization,Example Company,Jack,,Black,(650) 554-3321,2255,,,US,999 Down St,,Town City,AA,11224,jackblack@sample.com,Jack,,Black,(650) 554-3321,2255,999 Down St.,,Town City,AA,11224,jackblack@sample.com,4

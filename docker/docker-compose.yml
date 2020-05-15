@@ -1,0 +1,48 @@
+version: '2'
+services:
+    clientDomain-dbmanage:
+        image: phpmyadmin/phpmyadmin:latest
+        container_name: sourcetoad_clientDomain_phpmyadmin
+        ports:
+          - 15111:80
+        networks:
+          - clientDomain-internal
+          - st-mariadb-102
+        environment:
+          PMA_HOST: mariadb102
+          PMA_USER: root
+          PMA_PASSWORD: root
+    clientDomain-web:
+        image: nginx:latest
+        container_name: sourcetoad_clientDomain_web
+        environment:
+          - VIRTUAL_HOST=clientDomain.docker
+        volumes:
+            - ../:/code:delegated
+            - ./config/vhost.conf:/etc/nginx/conf.d/vhost.conf
+        networks:
+            - clientDomain-internal
+            - nginx-proxy
+    clientDomain-php:
+        container_name: sourcetoad_clientDomain_php
+        environment:
+          XDEBUG_CONFIG: "remote_host=10.254.254.254"
+          PHP_IDE_CONFIG: "serverName=docker"
+        build: .
+        volumes:
+            - ../:/code:consistent
+        networks:
+            - clientDomain-internal
+            - st-mariadb-102
+            - st-redis-32
+networks:
+  clientDomain-internal:
+  nginx-proxy:
+    external:
+      name: nginx-proxy
+  st-redis-32:
+    external:
+      name: st-redis-32
+  st-mariadb-102:
+    external:
+      name: st-mariadb-102

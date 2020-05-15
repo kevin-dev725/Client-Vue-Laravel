@@ -1,0 +1,7 @@
+.frontend-dashboard {
+  .main-container {
+    @include media-breakpoint-down(md) {
+      margin-bottom: 70px;
+    }
+  }
+}

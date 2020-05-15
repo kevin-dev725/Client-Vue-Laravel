@@ -1,0 +1,1 @@
+export const ACCOUNT_STATUS_ACTIVE = 'active', ACCOUNT_STATUS_SUSPENDED = 'suspended', ACCOUNT_STATUS_EXPIRED = 'expired', ACCOUNT_STATUS_CANCELLED = 'cancelled';

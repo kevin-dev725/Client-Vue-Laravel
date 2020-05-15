@@ -1,0 +1,8 @@
+.mobile-menu {
+  background: white;
+  padding: 10px;
+  box-shadow: -15px 19px 9px 20px rgba(0, 0, 0, 0.25);
+  .router-link-exact-active {
+    color: #1B285A;
+  }
+}

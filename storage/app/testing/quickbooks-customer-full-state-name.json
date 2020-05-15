@@ -1,0 +1,58 @@
+{
+  "QueryResponse": {
+    "Customer": [
+      {
+        "Taxable": true,
+        "BillAddr": {
+          "Id": "2",
+          "Line1": "4581 Finch St.",
+          "City": "Bayshore",
+          "CountrySubDivisionCode": "California",
+          "PostalCode": "94326",
+          "Lat": "INVALID",
+          "Long": "INVALID"
+        },
+        "ShipAddr": {
+          "Id": "2",
+          "Line1": "4581 Finch St.",
+          "City": "Bayshore",
+          "CountrySubDivisionCode": "California",
+          "PostalCode": "94326",
+          "Lat": "INVALID",
+          "Long": "INVALID"
+        },
+        "Job": false,
+        "BillWithParent": false,
+        "Balance": 239.00,
+        "BalanceWithJobs": 239.00,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "PreferredDeliveryMethod": "Print",
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "1",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2018-03-20T16:48:43-07:00",
+          "LastUpdatedTime": "2018-03-27T13:39:32-07:00"
+        },
+        "FullyQualifiedName": "Rodney Hills",
+        "CompanyName": "Test Company",
+        "DisplayName": "Rodney Hills",
+        "PrintOnCheckName": "Amy's Bird Sanctuary",
+        "Active": true,
+        "PrimaryPhone": {
+          "FreeFormNumber": "(650) 555-3311"
+        },
+        "PrimaryEmailAddr": {
+          "Address": "Birds@Intuit.com"
+        }
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 29
+  },
+  "time": "2018-06-03T23:31:39.538-07:00"
+}
